@@ -6,9 +6,9 @@ Nadat je code heb aangepast, navigeer binnen de Google Cloud Shell Terminal naar
 1. Image bouwen: <br>
    ```gcloud builds submit --tag gcr.io/potent-terminal-465211-d3/scrape-open ``` <br>
 2. Aanpassingen updaten: <br>
-   ```gcloud run jobs create scrape-open-job \
-  --image gcr.io/potent-terminal-465211-d3/scrape-open \
-  --region europe-west1 \
-  --memory 1Gi ```
+   ```gcloud run jobs create scrape-open-job \ ```
+   ```--image gcr.io/potent-terminal-465211-d3/scrape-open \ ```
+   ```--region europe-west1 \ ```
+   ```--memory 1Gi ```
 3. Run de nieuwe job: <br>
    ```gcloud run jobs execute scrape-open-job --region europe-west1 ```
