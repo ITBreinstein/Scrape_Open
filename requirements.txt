@@ -1,0 +1,10 @@
+python-jobspy
+pandas
+numpy
+pymupdf
+nltk
+scikit-learn
+rapidfuzz
+pyarrow
+supabase
+streamlit
