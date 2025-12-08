@@ -4,11 +4,11 @@ Het wordt gerund met Docker via Google Cloud Run Jobs: https://console.cloud.goo
 <br>
 Nadat je code heb aangepast, navigeer binnen de Google Cloud Shell Terminal naar deze repo, pull de nieuwe code en run het volgende (zorg dat Docker runt): <br>
 1. Image bouwen: <br>
-  gcloud builds submit --tag gcr.io/potent-terminal-465211-d3/scrape-open <br>
+   ```gcloud builds submit --tag gcr.io/potent-terminal-465211-d3/scrape-open ``` <br>
 2. Aanpassingen updaten: <br>
-  gcloud run jobs create scrape-open-job \
+   ```gcloud run jobs create scrape-open-job \
   --image gcr.io/potent-terminal-465211-d3/scrape-open \
   --region europe-west1 \
-  --memory 1Gi
+  --memory 1Gi ```
 3. Run de nieuwe job: <br>
-  gcloud run jobs execute scrape-open-job --region europe-west1
+   ```gcloud run jobs execute scrape-open-job --region europe-west1 ```
